@@ -18,7 +18,6 @@ import {
   LogOut,
 } from "lucide-react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import Exclude from "public/assets/exclude.png";
 import { useAppDispatch } from "@/store/hooks";
 import { logoutUser } from "@/store/slices/authSlice";
 
@@ -67,7 +66,7 @@ export function AppSidebar(props: React.ComponentProps<typeof Sidebar>) {
       <SidebarHeader className="bg-[#FAFAFA] px-6 py-4">
         <div className="flex items-center gap-2">
           <img
-            src={Exclude}
+            src="/assets/Exclude.png"
             alt="Logo"
             className="w-[30px] h-[30px] object-contain"
           />

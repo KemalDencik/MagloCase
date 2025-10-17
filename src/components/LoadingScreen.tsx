@@ -1,5 +1,3 @@
-import Exclude from "public/assets/exclude.png";
-
 interface LoadingScreenProps {
   message?: string;
 }
@@ -10,7 +8,7 @@ export const LoadingScreen = ({
   return (
     <div className="fixed inset-0 z-50 flex flex-col items-center justify-center bg-white/80 backdrop-blur-sm">
       <img
-        src={Exclude}
+        src="/assets/Exclude.png"
         alt="Logo"
         className="w-14 h-14 animate-bounce object-contain mb-3"
       />
