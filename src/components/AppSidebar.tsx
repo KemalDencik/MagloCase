@@ -18,7 +18,7 @@ import {
   LogOut,
 } from "lucide-react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import Exclude from "@/assets/Exclude.png";
+import Exclude from "public/assets/exclude.png";
 import { useAppDispatch } from "@/store/hooks";
 import { logoutUser } from "@/store/slices/authSlice";
 

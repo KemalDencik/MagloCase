@@ -1,4 +1,4 @@
-import Exclude from "@/assets/exclude.png";
+import Exclude from "public/assets/exclude.png";
 
 interface LoadingScreenProps {
   message?: string;
