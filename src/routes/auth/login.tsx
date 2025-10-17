@@ -7,7 +7,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { createFileRoute, redirect, useNavigate } from "@tanstack/react-router";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import loginImage from "public/assets/loginImage.png";
 import CustomFormField from "@/components/CustomFormField/CustomFormField";
 import CustomTextInput from "@/components/CustomTextInput.tsx/CustomTextInput";
 import { useAppDispatch, useAppSelector } from "@/store/hooks";
@@ -147,7 +146,7 @@ export const LoginPage = () => {
 
       <div className="hidden md:block relative w-full h-full">
         <img
-          src={loginImage}
+          src="/assets/loginImage.png"
           alt="Login illustration"
           className="absolute inset-0 w-full h-full object-cover"
         />

@@ -2,8 +2,6 @@ import React, { useRef, useState, useEffect } from "react";
 import { CardDto } from "@/api/models";
 import { defaultWalletTheme, walletThemes } from "@/constant/walletThemes";
 import { Wifi } from "lucide-react";
-import visaLogo from "@/assets/cards/visa.svg";
-import mastercardLogo from "@/assets/cards/mastercard.svg";
 
 export const WalletCardStack: React.FC<{ cards: CardDto[] }> = ({ cards }) => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -54,9 +52,9 @@ export const WalletCardStack: React.FC<{ cards: CardDto[] }> = ({ cards }) => {
 
           const networkLogo =
             card.network?.toLowerCase() === "visa"
-              ? visaLogo
+              ? "/assets/cards/visa.svg"
               : card.network?.toLowerCase().includes("master")
-              ? mastercardLogo
+              ? "/assets/cards/mastercard.svg"
               : undefined;
 
           return (
